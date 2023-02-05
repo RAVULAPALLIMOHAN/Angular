@@ -1,9 +1,16 @@
-<div class="row">
+<div class="rows">
 <label class="Base" >Angular Basics</label>
 </div>
 <br/>
 <div>
   <input type="text" placeholder="input text"  [(ngModel)]="name" />
-  <button class="btn btn-success" [disabled]="dis" >Submit</button>
-  {{name}}
+  <button class="btn btn-success" [disabled]="!dis" (click)="onCreateServe()" >Submit</button>
+  <br/>
+  <p *ngIf="ServerName; else noServe">Server Was Created. Name is {{ServerName}}</p>
+  <br/>
+  <ng-template #noServe>
+    <p>No Server was created..!</p>
+  </ng-template>
+  <p [ngStyle]="{backgroundColor:getcolor(),color:'White'}">Dynamic color.. Type "Online" or "Offline" </p>
+  <p [ngClass]="{online: ServerName ==='Online'}">Dynamic Class</p>
 </div>

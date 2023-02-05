@@ -7,13 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 dis :boolean = false;
+serverStatus :string ='Offline';
+
   constructor() { 
     setTimeout(() => {
-      this.dis = true;
-    }, 2000);
+        this.dis = true;
+      }, 2000);
   }
+
 
   ngOnInit(): void {
   }
   name = "";
+  ServerName = "";
+  onCreateServe(){
+    this.ServerName = this.name;
+    
+  }
+  getcolor(){
+    return this.ServerName ==='Online' ? 'green':'red';
+  }
 }
