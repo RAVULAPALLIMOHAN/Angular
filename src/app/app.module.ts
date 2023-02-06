@@ -7,7 +7,14 @@ import { HomeComponent } from './Components/home/home.component';
 import { MainComponent } from './Components/Main/main/main.component';
 import { FirstComponent } from './Components/Main/first/first.component';
 import { LastComponent } from './Components/Main/last/last.component';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './Components/Header/header/header.component';
+import { RecipesComponent } from './Components/Recipes/recipes/recipes.component';
+import { RecipeListComponent } from './Components/Recipes/recipe-list/recipe-list.component';
+import { RecipeDetailsComponent } from './Components/Recipes/recipe-details/recipe-details.component';
+import { RecipeItemComponent } from './Components/Recipes/recipe-list/recipe-item/recipe-item.component';
+import { ShoppingListComponent } from './Components/Shopping/shopping-list/shopping-list.component';
+import { ShoppingEditComponent } from './Components/Shopping/shopping-edit/shopping-edit.component'
 
 
 @NgModule({
@@ -16,7 +23,14 @@ import { FormsModule } from '@angular/forms'
     HomeComponent,
     MainComponent,
     FirstComponent,
-    LastComponent
+    LastComponent,
+    HeaderComponent,
+    RecipesComponent,
+    RecipeListComponent,
+    RecipeDetailsComponent,
+    RecipeItemComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent
   ],
   imports: [
     BrowserModule,
