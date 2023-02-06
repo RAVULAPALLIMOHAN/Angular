@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\app\\Components",
+    "\\src\\app\\Components\\home",
+    "\\src\\app\\Components\\Main\\first"
   ],
-  "SelectedNode": "\\C:\\Mohan\\Git\\Angular",
+  "SelectedNode": "\\angular.json",
   "PreviewInSolutionExplorer": false
 }

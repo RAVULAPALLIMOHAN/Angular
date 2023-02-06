@@ -5,12 +5,18 @@
 <div>
   <input type="text" placeholder="input text"  [(ngModel)]="name" />
   <button class="btn btn-success" [disabled]="!dis" (click)="onCreateServe()" >Submit</button>
+  <button class="btn btn-primary" (click)="loop()">Add Numbers</button>
+  <div *ngFor="let data of log">
+<p [ngStyle]="{backgroundColor: data >= 5 ?'red':'blue',width:'20px'}" [ngClass]="{'white-space': data >= 5}">{{data}}</p>
+  </div>
+  <p [ngStyle]="{backgroundColor:getcolor()}">Dynamic color.. Type "Online" or "Offline" </p>
+  <p [ngClass]="{online: ServerName ==='Online'}">Dynamic Class</p>
   <br/>
   <p *ngIf="ServerName; else noServe">Server Was Created. Name is {{ServerName}}</p>
   <br/>
   <ng-template #noServe>
     <p>No Server was created..!</p>
   </ng-template>
-  <p [ngStyle]="{backgroundColor:getcolor(),color:'White'}">Dynamic color.. Type "Online" or "Offline" </p>
-  <p [ngClass]="{online: ServerName ==='Online'}">Dynamic Class</p>
+
 </div>
+<app-main *ngFor="let sr of serverFor"></app-main>
