@@ -1,1 +1,34 @@
-<p>recipe-list works!</p>
+<div>
+    Name :<input type="text" id="name" [(ngModel)]="name" placeholder="Name">
+    Description : <input type="text" id="des" [(ngModel)]="des" placeholder="Description">
+    Image :<input type="text"  [(ngModel)]="img">
+    <!-- Image :<input type="file" id="file" [(ngModel)]="img"> -->
+    <br/>
+    <button class="btn btn-info" (click)="addItem()">Add Item</button>
+</div>
+
+<hr/>
+<div class="container">
+    <div *ngFor="let item of recipies">
+        <ul>
+            <li>{{item.name}}</li>
+            <li>{{item.description}}</li>
+            
+            <a href={{item.img}}>
+                <li><img [src]="item.img" alt="{{item.img}}" style="width: 50px;"></li>
+            </a>
+            <hr/>
+        </ul>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<app-recipe-item></app-recipe-item>

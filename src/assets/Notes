@@ -1,2 +1,40 @@
---GitHub Url https://github.com/angular/angular-cli/wiki
---To Create new project ng new ProjectName --no-strict
+<!--GitHub Url https://github.com/angular/angular-cli/wiki
+    To Create new project ng new ProjectName --no-strict
+ <app-home></app-home> angulr basic dynamic class and style and loops 
+
+ -- loop condition
+ <app-header></app-header>
+ <div class="container">
+    <div class="row">
+        <div class ="col-md-12">
+            <app-recipes></app-recipes>
+            <app-shopping-list></app-shopping-list>
+        </div>
+    </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
