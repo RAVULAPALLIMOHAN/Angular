@@ -1,0 +1,15 @@
+
+<div style="margin-left:50px;">
+    <div class="row">
+        <ul>
+            <li>Angular Application</li>
+        </ul>
+    </div>
+    <div class="row" >
+        <app-one (intervalFired)="onInterval($event)"></app-one>
+    </div>
+    <br/>
+    <div class="row">
+        <app-second *ngFor="let num of oddNumbers" [numbers]="num"></app-second>
+    </div>
+</div>

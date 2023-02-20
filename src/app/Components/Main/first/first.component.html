@@ -1,1 +1,12 @@
-<p>first works!</p>
+<div class="row">
+    <div class="col-xs-12">
+        <p> Add new server</p>
+        <label>server name</label>
+        <input type="text" class="form-control" [(ngModel)]="newserverName" #serveName>
+        <label>server Content</label>
+        <input type="text" class="form-control" [(ngModel)]="newserverContent" #bluePrint>
+    </div>
+    <br/>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="btn btn-primary " (click)="addServer(serveName)">Add Server</button>&nbsp;&nbsp;
+    <button class="btn btn-primary" (click)="addServerBluePrint(bluePrint)">Add Server Blue Print</button>
+</div>

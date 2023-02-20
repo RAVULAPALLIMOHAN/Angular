@@ -14,7 +14,10 @@ import { RecipeListComponent } from './Components/Recipes/recipe-list/recipe-lis
 import { RecipeDetailsComponent } from './Components/Recipes/recipe-details/recipe-details.component';
 import { RecipeItemComponent } from './Components/Recipes/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingListComponent } from './Components/Shopping/shopping-list/shopping-list.component';
-import { ShoppingEditComponent } from './Components/Shopping/shopping-edit/shopping-edit.component'
+import { ShoppingEditComponent } from './Components/Shopping/shopping-edit/shopping-edit.component';
+import { OneComponent } from './Components/Others/one/one.component';
+import { SecondComponent } from './Components/Others/second/second.component';
+import { ThirdComponent } from './Components/Others/third/third.component'
 
 
 @NgModule({
@@ -30,7 +33,10 @@ import { ShoppingEditComponent } from './Components/Shopping/shopping-edit/shopp
     RecipeDetailsComponent,
     RecipeItemComponent,
     ShoppingListComponent,
-    ShoppingEditComponent
+    ShoppingEditComponent,
+    OneComponent,
+    SecondComponent,
+    ThirdComponent
   ],
   imports: [
     BrowserModule,
