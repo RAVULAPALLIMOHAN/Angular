@@ -8,18 +8,10 @@
 </div>
 
 <hr/>
-<div class="container">
-    <div *ngFor="let item of recipies">
-        <ul>
-            <li>{{item.name}}</li>
-            <li>{{item.description}}</li>
-            
-            <a href={{item.img}}>
-                <li><img [src]="item.img" alt="{{item.img}}" style="width: 50px;"></li>
-            </a>
-            <hr/>
-        </ul>
-
+<div class="row">
+    <div class="col-xs-12"> 
+        <app-recipe-item *ngFor="let item of recipies" [recipeI]="item"
+        (recopeSelected)="onRecipeSelected(item)"></app-recipe-item>
     </div>
 </div>
 

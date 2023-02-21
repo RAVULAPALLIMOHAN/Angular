@@ -1,11 +1,14 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <app-recipe-list></app-recipe-list>
+        <div class="col-md-6">
+            <app-recipe-list (RecipeWasSelected)="selectedRecipe = $event"></app-recipe-list>
+        </div>
+        <div class="col-md-6">
+            <app-recipe-details *ngIf="selectedRecipe;else infoText" [recipe]="selectedRecipe"></app-recipe-details>
+            <ng-template #infoText>
+                <p>no data found</p>
+            </ng-template>
         </div>
     </div>
-        <div class="row">
-            <div class="col-md-12"></div>
-            <app-recipe-details></app-recipe-details>
-    </div>
+        
 </div>
