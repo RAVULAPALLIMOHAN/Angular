@@ -17,7 +17,9 @@ import { ShoppingListComponent } from './Components/Shopping/shopping-list/shopp
 import { ShoppingEditComponent } from './Components/Shopping/shopping-edit/shopping-edit.component';
 import { OneComponent } from './Components/Others/one/one.component';
 import { SecondComponent } from './Components/Others/second/second.component';
-import { ThirdComponent } from './Components/Others/third/third.component'
+import { ThirdComponent } from './Components/Others/third/third.component';
+import { DemodirectivesComponent } from './Components/Directives/demodirectives/demodirectives.component';
+import { DropdownDirective } from './Components/Dropdown/dropdown.directive'
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { ThirdComponent } from './Components/Others/third/third.component'
     ShoppingEditComponent,
     OneComponent,
     SecondComponent,
-    ThirdComponent
+    ThirdComponent,
+    DemodirectivesComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,

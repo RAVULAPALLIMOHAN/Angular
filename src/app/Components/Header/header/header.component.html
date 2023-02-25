@@ -5,15 +5,16 @@
         <a href="#" class="navbar-brand" (click)="onSelect('recipes')" Recipes>Recipes</a>
         <a href="#" class="navbar-brand" Shopping List (click)="onSelect('shopping')">Shopping List</a>
         
-        <ul class="nav navbar-nav navbar-right">
-            <li calss="dropdown">
+        <ul class="nav navbar-nav navbar-right" >
+            <li calss="dropdown" appDropdown>
                 <a href="#" class="dropdown-toggle" role="button">Manage </a>
-            <ul class="dropdown-menu"> 
-                <li><a href="#" Save Data></a></li>
-                <li><a href="#" Fetch Data></a></li>
+            <ul class="dropdown-menu" > 
+                <li><a href="#">Save Data</a></li>
+                <li><a href="#">Fetch Data</a></li>
             </ul>
             </li>
         </ul>
+         
     </div>
 </div> 
 

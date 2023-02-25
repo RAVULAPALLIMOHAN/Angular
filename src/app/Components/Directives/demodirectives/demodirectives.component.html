@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <button class="btn btn-primary" (click)="onodd =! onodd">show numbers</button><br/>
+            <ul class="list-group">
+                <div *ngIf="onodd">
+                    <li class="list-group-item" *ngFor="let odd of oddNum"
+                    [ngClass]="{odd:odd%2 !== 0}"
+                    [ngStyle]="{backgroundColor: odd %2 !== 0 ? 'yellow':'green'}">
+                        {{odd}}
+                    </li>
+
+                </div>
+                <div *ngIf="!onodd">
+                    <li class="list-group-item" *ngFor="let even of evenNum"
+                    [ngClass]="{odd:even %2 !== 0}"
+                    [ngStyle]="{backgroundColor:even % 2 ===0 ?'green':'red'}">
+                        {{even}}
+                    </li>
+
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>
